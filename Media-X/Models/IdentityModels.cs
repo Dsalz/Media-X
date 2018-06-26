@@ -29,5 +29,17 @@ namespace Media_X.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Billboard> Billboards { get; set; }
+        public DbSet<BillboardOwner> Owners { get; set; }
+        public DbSet<Screen> Screens { get; set; }
+        public DbSet<VideoFormat> VideoFormats { get; set; }
+        public DbSet<State> States { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Unit> Units { get; set; }
+        public DbSet<Slot> Slots { get; set; }
+        public DbSet<DayoftheWeek> Days { get; set; } 
+        public DbSet<Transaction> Transactions { get; set; } 
     }
+    
 }
